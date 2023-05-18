@@ -1,0 +1,51 @@
+.footer {
+    position: relative;
+    bottom: 20%;
+    color: white;
+    margin-left: 30px;
+}
+
+.textoFooter h3, p {
+    padding-bottom: 20px;
+}
+
+.footerTituloMusica {
+    display: flex;
+}
+
+.imgFooter {
+    animation: rodaImg 3s infinite linear;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    height: 50px;
+    filter: invert(1);
+}
+
+
+@keyframes rodaImg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tituloMusicFooter {
+    width: 80%;
+    overflow-x: hidden;
+}
+
+.tituloMusicFooter p{
+    animation: moveTitulo 5s infinite linear;
+}
+
+@keyframes moveTitulo {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
